@@ -1,8 +1,10 @@
 export default function MyBtn(props){
 
-    const { title } = props.languageProp
+    const { title, isActive } = props.languageProp
 
     return (
-       <li><button className="btn btn-primary">{title}</button></li>
+       <li><button 
+       onClick={isActive} 
+       className="btn btn-primary">{title}</button></li>
     )
 }
