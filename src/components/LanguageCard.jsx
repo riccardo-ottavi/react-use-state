@@ -1,8 +1,9 @@
-export default function LanguageCard(){
+export default function LanguageCard(languageProp){
+    const { title, description } = languageProp;
     return(
         <div className="lang-card">
-            <h2>Titolo Card</h2>
-            <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+            <h2>{title}</h2>
+            <p>{description}</p>
         </div>
     )
 } 

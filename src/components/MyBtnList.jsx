@@ -1,6 +1,7 @@
 
 import MyBtn from "./MyBtn"
 import languages from "./product/languages"
+import LanguageCard from "./LanguageCard";
 
 import { useState } from "react";
 
@@ -8,7 +9,8 @@ import { useState } from "react";
 
 
 export default function MyBtnList(){
-    const [activeBtn , setActiveBtn] = useState(null);
+const [activeBtn, setActiveBtn] = useState(null);
+const [description, setDescription] = useState("");
     return(
         <div className="btn-list">
             <ul>
@@ -17,12 +19,16 @@ export default function MyBtnList(){
                         languageProp = {language} 
                         title = {language.title}
                         isActive = {activeBtn === language.id}
-                        onActive = {() => setActiveBtn(activeBtn === language.id ? null : language.id)}
-                        key={language.id}
-                                       
+                        onActive = {() => {
+                            console.log("bottone premuto: " , language.id)
+                            setActiveBtn(activeBtn === language.id ? null : language.id)
+                            setDescription(language.description);
+                        }}
+                        key={language.id}             
                     />
                 ))}
             </ul>
+            <LanguageCard description={description} />
         </div>      
     )
 }
