@@ -1,11 +1,12 @@
 import './App.css'
+import MyHeader from "./components/MyHeader"
 
 function App() {
   console.log("provaaaaaaaaaa")
 
   return (
     <>
-      <h1>Provaaa</h1>
+      <MyHeader/>
     </>
   )
 }

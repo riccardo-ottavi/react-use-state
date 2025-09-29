@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.page-title {
+  height: 80px;
+  background-color: #F8F9FA;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
