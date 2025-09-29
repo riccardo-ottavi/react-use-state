@@ -1,4 +1,5 @@
 import './App.css'
+import MyBtnList from './components/MyBtnList'
 import MyHeader from "./components/MyHeader"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <MyHeader/>
+      <MyBtnList/>
     </>
   )
 }
