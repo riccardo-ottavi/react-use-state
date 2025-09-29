@@ -25,3 +25,13 @@ h1 {
   max-width: 400px;
 
 }
+
+.lang-card {
+  border: 1px grey solid;
+  width: 50%;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 16px;
+}
