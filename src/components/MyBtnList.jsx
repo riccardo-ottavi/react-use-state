@@ -10,7 +10,7 @@ import { useState } from "react";
 
 export default function MyBtnList(){
 const [activeBtn, setActiveBtn] = useState(null);
-const [description, setDescription] = useState("");
+const [description, setDescription] = useState("nessun linguaggio selezionato");
     return(
         <div className="btn-list">
             <ul>
